@@ -1263,3 +1263,650 @@ button{
     color:#17364d;
     font-weight:800;
 }
+/* =====================================================
+   ESCALA GENERAL MÁS COMPACTA
+===================================================== */
+
+html{
+    font-size:15px;
+}
+
+body{
+    font-size:15px;
+}
+
+
+/* PC */
+@media (min-width:901px){
+
+    .navbar{
+        min-height:78px;
+    }
+
+    .logo-icono{
+        width:48px;
+        height:48px;
+    }
+
+    .logo-texto strong{
+        font-size:22px;
+    }
+
+    .menu a{
+        font-size:14px;
+    }
+
+    .hero-contenido{
+        padding:55px 0 65px;
+    }
+
+    .hero h1{
+        font-size:48px;
+        line-height:1.08;
+    }
+
+    .hero-descripcion{
+        font-size:16px;
+        max-width:650px;
+    }
+
+    .rastreo-card{
+        max-width:650px;
+        padding:16px;
+    }
+
+    .rastreo-input input{
+        font-size:15px;
+        padding:14px 0;
+    }
+
+    .btn-rastrear{
+        font-size:16px;
+        padding:14px;
+    }
+
+    .seccion{
+        padding:65px 0;
+    }
+
+    .titulo-centro h2{
+        font-size:36px;
+    }
+
+    .titulo-centro p{
+        font-size:15px;
+    }
+
+    .nosotros-card h3,
+    .departamento-card h3{
+        font-size:24px;
+    }
+
+    .nosotros-card p,
+    .descripcion-departamento,
+    .contacto-datos p{
+        font-size:14px;
+    }
+
+    .servicios-grid article h3{
+        font-size:19px;
+    }
+
+    .servicios-grid article p{
+        font-size:14px;
+    }
+
+    .faq-pregunta{
+        font-size:14px;
+    }
+
+    .faq-respuesta{
+        font-size:14px;
+    }
+
+    .cta-final h2{
+        font-size:36px;
+    }
+}
+
+
+/* CELULAR */
+@media (max-width:600px){
+
+    body{
+        font-size:14px;
+    }
+
+    .contenedor{
+        width:92%;
+    }
+
+    /* HEADER */
+
+    .barra-superior{
+        padding:7px 10px 9px;
+    }
+
+    .barra-superior span{
+        font-size:8px;
+        padding:4px 8px;
+    }
+
+    .barra-superior p{
+        font-size:9px;
+    }
+
+    .navbar{
+        min-height:62px;
+        width:92%;
+    }
+
+    .logo{
+        gap:8px;
+    }
+
+    .logo-icono{
+        width:38px;
+        height:38px;
+        border-radius:10px;
+    }
+
+    .logo-icono span{
+        font-size:14px;
+    }
+
+    .logo-icono small{
+        font-size:7px;
+    }
+
+    .logo-texto strong{
+        font-size:18px;
+    }
+
+    .logo-texto span{
+        font-size:6.5px;
+        max-width:130px;
+    }
+
+    .menu-toggle{
+        width:40px;
+        height:40px;
+        font-size:20px;
+        border-radius:10px;
+    }
+
+    .menu.activo{
+        top:62px;
+    }
+
+
+    /* HERO */
+
+    .hero-contenido{
+        width:92%;
+        padding:30px 0 38px;
+    }
+
+    .hero-etiqueta{
+        font-size:9px;
+        padding:6px 10px;
+    }
+
+    .hero h1{
+        margin-top:16px;
+        font-size:28px;
+        line-height:1.08;
+        letter-spacing:-0.7px;
+    }
+
+    .hero-descripcion{
+        margin-top:12px;
+        font-size:13px;
+        line-height:1.45;
+        max-width:330px;
+    }
+
+
+    /* RASTREO */
+
+    .rastreo-card{
+        margin-top:20px;
+        padding:10px;
+        border-radius:16px;
+    }
+
+    .rastreo-input{
+        padding:0 12px;
+        border-radius:11px;
+    }
+
+    .rastreo-icono{
+        font-size:17px;
+    }
+
+    .rastreo-input input{
+        padding:12px 0;
+        font-size:14px;
+    }
+
+    .btn-rastrear{
+        margin-top:8px;
+        padding:12px;
+        font-size:14px;
+        border-radius:11px;
+    }
+
+    .rastreo-ayuda{
+        margin-top:10px;
+        font-size:10px;
+    }
+
+
+    /* SECCIONES */
+
+    .seccion{
+        padding:40px 0;
+    }
+
+    .titulo-centro{
+        margin-bottom:22px;
+    }
+
+    .etiqueta-seccion{
+        font-size:8px;
+        padding:6px 10px;
+    }
+
+    .titulo-centro h2{
+        margin-top:10px;
+        font-size:27px;
+        line-height:1.1;
+    }
+
+    .titulo-centro p{
+        margin-top:9px;
+        font-size:13px;
+    }
+
+
+    /* QUIÉNES SOMOS */
+
+    .nosotros-card{
+        padding:17px;
+        border-radius:16px;
+    }
+
+    .nosotros-card h3{
+        font-size:20px;
+    }
+
+    .nosotros-card p{
+        font-size:12.5px;
+        line-height:1.5;
+    }
+
+    .nosotros-valores article{
+        padding:13px;
+        border-radius:13px;
+    }
+
+    .nosotros-valores h4{
+        font-size:14px;
+    }
+
+    .nosotros-valores p{
+        font-size:12px;
+    }
+
+    .estadisticas-identidad strong{
+        font-size:25px;
+    }
+
+    .estadisticas-identidad span{
+        font-size:10px;
+    }
+
+    .estadisticas-identidad div{
+        padding:17px 10px;
+    }
+
+
+    /* COBERTURA */
+
+    .departamento{
+        padding:7px 10px;
+        font-size:11px;
+        border-radius:10px;
+    }
+
+    .departamento-card,
+    .planificador-card,
+    .contacto-card{
+        padding:16px;
+        border-radius:17px;
+    }
+
+    .departamento-card h3{
+        font-size:21px;
+    }
+
+    .descripcion-departamento{
+        font-size:12.5px;
+    }
+
+    .hub-badge{
+        font-size:10px;
+        padding:7px 9px;
+    }
+
+    .municipio{
+        font-size:11px;
+        padding:7px 9px;
+        border-radius:10px;
+    }
+
+    .datos-cobertura{
+        margin-top:20px;
+    }
+
+    .datos-cobertura div{
+        padding:13px;
+    }
+
+    .datos-cobertura span{
+        font-size:9px;
+    }
+
+    .datos-cobertura strong{
+        font-size:13px;
+    }
+
+
+    /* FORMULARIOS */
+
+    .campo{
+        margin-bottom:14px;
+    }
+
+    .campo label{
+        font-size:10px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea{
+        padding:12px;
+        font-size:12.5px;
+        border-radius:11px;
+    }
+
+    .resultado-planificador{
+        padding:15px;
+        border-radius:14px;
+    }
+
+    .resultado-planificador h3{
+        font-size:19px;
+    }
+
+    .resultado-planificador p{
+        font-size:12px;
+    }
+
+    .resultado-planificador strong{
+        font-size:14px;
+    }
+
+    .resultado-planificador span{
+        font-size:11px;
+    }
+
+    .btn-azul,
+    .btn-enviar{
+        padding:12px;
+        font-size:13px;
+        border-radius:11px;
+    }
+
+
+    /* SERVICIOS */
+
+    .servicios-grid article{
+        padding:16px;
+    }
+
+    .servicios-grid article h3{
+        font-size:17px;
+    }
+
+    .servicios-grid article p{
+        font-size:12px;
+    }
+
+
+    /* CONFIANZA */
+
+    .confianza{
+        padding:42px 0;
+    }
+
+    .confianza-texto h2{
+        font-size:27px;
+    }
+
+    .confianza-texto p,
+    .confianza-texto li{
+        font-size:13px;
+    }
+
+    .red-despacho{
+        padding:16px;
+        border-radius:17px;
+    }
+
+    .red-despacho h3{
+        font-size:17px;
+    }
+
+
+    /* FAQ */
+
+    .faq-pregunta{
+        padding:12px 13px;
+        font-size:12.5px;
+    }
+
+    .faq-respuesta{
+        padding:0 13px 13px;
+        font-size:12px;
+    }
+
+
+    /* CONTACTO */
+
+    .contacto-datos strong{
+        font-size:14px;
+    }
+
+    .contacto-datos p{
+        font-size:12px;
+    }
+
+
+    /* CTA FINAL */
+
+    .cta-final{
+        padding:40px 0;
+    }
+
+    .cta-final .contenedor{
+        padding:28px 17px;
+        border-radius:18px;
+    }
+
+    .cta-final h2{
+        font-size:26px;
+    }
+
+    .cta-final p{
+        font-size:12.5px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid{
+        padding:35px 0;
+        gap:24px;
+    }
+
+    .footer h3{
+        font-size:13px;
+    }
+
+    .footer a,
+    .footer p{
+        font-size:11px;
+    }
+
+
+    /* RESULTADO DEL RASTREO */
+
+    .guia-no-encontrada{
+        margin-top:15px;
+        padding:22px 16px;
+        border-radius:17px;
+    }
+
+    .icono-error{
+        width:50px;
+        height:50px;
+        font-size:25px;
+        margin-bottom:15px;
+    }
+
+    .guia-no-encontrada h3{
+        font-size:21px;
+    }
+
+    .guia-no-encontrada p{
+        font-size:12.5px;
+        line-height:1.45;
+    }
+
+    .btn-intentar,
+    .btn-asesor{
+        width:100%;
+        max-width:245px;
+        padding:11px 14px;
+        font-size:12px;
+    }
+
+}
+/* AJUSTE FINAL DE LEGIBILIDAD EN CELULAR */
+@media (max-width:600px){
+
+    body{
+        font-size:15px;
+    }
+
+    .logo-texto strong{
+        font-size:19px;
+    }
+
+    .logo-texto span{
+        font-size:7.5px;
+    }
+
+    .hero-etiqueta{
+        font-size:10px;
+    }
+
+    .hero h1{
+        font-size:32px;
+        line-height:1.08;
+    }
+
+    .hero-descripcion{
+        font-size:14px;
+        line-height:1.5;
+        max-width:350px;
+    }
+
+    .rastreo-input input{
+        font-size:14px;
+    }
+
+    .btn-rastrear{
+        font-size:14px;
+    }
+
+    .rastreo-ayuda{
+        font-size:11px;
+    }
+
+    .etiqueta-seccion{
+        font-size:9px;
+    }
+
+    .titulo-centro h2{
+        font-size:29px;
+    }
+
+    .titulo-centro p{
+        font-size:14px;
+    }
+
+    .nosotros-card h3{
+        font-size:21px;
+    }
+
+    .nosotros-card p{
+        font-size:14px;
+        line-height:1.55;
+    }
+
+    .nosotros-valores h4{
+        font-size:15px;
+    }
+
+    .nosotros-valores p{
+        font-size:13px;
+    }
+
+    .departamento-card h3{
+        font-size:22px;
+    }
+
+    .descripcion-departamento{
+        font-size:13px;
+    }
+
+    .servicios-grid article h3{
+        font-size:18px;
+    }
+
+    .servicios-grid article p{
+        font-size:13px;
+    }
+
+    .faq-pregunta{
+        font-size:13px;
+    }
+
+    .faq-respuesta{
+        font-size:13px;
+    }
+
+    .contacto-datos p{
+        font-size:13px;
+    }
+
+    .guia-no-encontrada h3{
+        font-size:22px;
+    }
+
+    .guia-no-encontrada p{
+        font-size:13px;
+    }
+}
