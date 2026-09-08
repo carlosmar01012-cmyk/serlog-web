@@ -1187,3 +1187,79 @@ button{
         padding:11px 14px;
     }
 }
+/* RESULTADO DEL RASTREO */
+
+.alerta-guia{
+    margin:15px auto 0;
+    max-width:720px;
+    padding:15px;
+    border-radius:14px;
+    background:#fff3e3;
+    color:#9b5a11;
+    font-weight:700;
+}
+
+.guia-no-encontrada{
+    max-width:680px;
+    margin:28px auto 0;
+    background:#ffffff;
+    border:1px solid #e0e6eb;
+    border-radius:24px;
+    padding:45px 35px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(20,55,80,.08);
+}
+
+.icono-error{
+    width:78px;
+    height:78px;
+    margin:0 auto 28px;
+    border-radius:50%;
+    background:#fff0f0;
+    color:#d73737;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:42px;
+    font-weight:500;
+}
+
+.guia-no-encontrada h3{
+    color:#0d2f49;
+    font-size:32px;
+    margin-bottom:16px;
+}
+
+.guia-no-encontrada p{
+    color:#6f7780;
+    font-size:18px;
+    line-height:1.6;
+    max-width:520px;
+    margin:auto;
+}
+
+.guia-no-encontrada p strong{
+    color:#3c4852;
+}
+
+.btn-intentar{
+    display:block;
+    margin:30px auto 14px;
+    padding:14px 28px;
+    background:white;
+    border:2px solid #e0e5ea;
+    border-radius:14px;
+    color:#123f5f;
+    font-weight:800;
+}
+
+.btn-asesor{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 28px;
+    background:#f5a43b;
+    border-radius:14px;
+    color:#17364d;
+    font-weight:800;
+}
