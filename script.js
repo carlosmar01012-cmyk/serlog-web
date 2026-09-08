@@ -1,4 +1,4 @@
-const btnRastrear = document.getElementById("btnRastrear");
+ const btnRastrear = document.getElementById("btnRastrear");
 const numeroGuia = document.getElementById("numeroGuia");
 const resultadoRastreo = document.getElementById("resultadoRastreo");
 
@@ -482,5 +482,24 @@ numeroGuia.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         btnRastrear.click();
     }
+
+});
+// HACER SELECCIONABLES LOS MUNICIPIOS DE COBERTURA
+
+coberturaInfo.addEventListener("click", function (e) {
+
+    const municipio = e.target.closest(".municipio");
+
+    if (!municipio) {
+        return;
+    }
+
+    const municipios = coberturaInfo.querySelectorAll(".municipio");
+
+    municipios.forEach(function (item) {
+        item.classList.remove("destacado");
+    });
+
+    municipio.classList.add("destacado");
 
 });
