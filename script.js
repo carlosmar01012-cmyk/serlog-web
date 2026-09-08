@@ -1,4 +1,7 @@
- const btnRastrear = document.getElementById("btnRastrear");
+ console.log("btnRastrear:", document.getElementById("btnRastrear"));
+console.log("numeroGuia:", document.getElementById("numeroGuia"));
+console.log("resultadoRastreo:", document.getElementById("resultadoRastreo"));
+const btnRastrear = document.getElementById("btnRastrear");
 const numeroGuia = document.getElementById("numeroGuia");
 const resultadoRastreo = document.getElementById("resultadoRastreo");
 
@@ -7,54 +10,50 @@ btnRastrear.addEventListener("click", function () {
     const guia = numeroGuia.value.trim();
 
     if (guia === "") {
-
         resultadoRastreo.innerHTML = `
-            <div style="
-                margin-top:15px;
-                padding:14px;
-                border-radius:14px;
-                background:#fff3e3;
-                color:#9b5a11;
-                font-weight:700;
-            ">
+            <div class="alerta-guia">
                 Ingresa un número de guía para continuar.
             </div>
         `;
-
         return;
     }
 
-    resultadoRastreo.innerHTML = `
-        <div style="
-            margin-top:15px;
-            padding:18px;
-            border-radius:16px;
-            background:#eaf6f8;
-            color:#123f5f;
-            text-align:left;
-            border:1px solid #cce4e9;
-        ">
+        resultadoRastreo.innerHTML = `
+        <div class="guia-no-encontrada">
 
-            <strong>
-                Guía: ${guia}
-            </strong>
+            <div class="icono-error">!</div>
 
-            <p style="margin-top:8px;">
-                Estado actual:
-                <strong>En tránsito</strong>
+            <h3>No encontramos esta guía</h3>
+
+            <p>
+                No registramos información para la guía
+                <strong>${guia}</strong>.
+                Verifica el número ingresado en tu comprobante
+                e inténtalo nuevamente.
             </p>
 
-            <p style="margin-top:6px;">
-                Tu envío se encuentra en proceso dentro de nuestra red logística del Caribe.
-            </p>
+            <button type="button" class="btn-intentar" id="btnIntentar">
+                Intentar nuevamente
+            </button>
+
+            <a href="#contacto" class="btn-asesor">
+                Contactar a un asesor
+            </a>
 
         </div>
     `;
 
+    const btnIntentar = document.getElementById("btnIntentar");
+
+    btnIntentar.addEventListener("click", function () {
+        numeroGuia.value = "";
+        resultadoRastreo.innerHTML = "";
+        numeroGuia.focus();
+    });
+
 });
-("menuToggle");
  const menuToggle = document.getElementById("menuToggle");
-const menu = document.getElementById("menu");
+ const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function () {
 
@@ -503,3 +502,365 @@ coberturaInfo.addEventListener("click", function (e) {
     municipio.classList.add("destacado");
 
 });
+/* AJUSTES PROFESIONALES PARA CELULAR */
+@media (max-width:600px){
+
+    .contenedor{
+        width:90%;
+    }
+
+    .barra-superior{
+        padding:10px 12px 12px;
+    }
+
+    .barra-superior span{
+        font-size:10px;
+        padding:4px 10px;
+    }
+
+    .barra-superior p{
+        font-size:11px;
+    }
+
+    .navbar{
+        min-height:72px;
+    }
+
+    .logo{
+        gap:10px;
+    }
+
+    .logo-icono{
+        width:44px;
+        height:44px;
+        border-radius:11px;
+    }
+
+    .logo-icono span{
+        font-size:16px;
+    }
+
+    .logo-icono small{
+        font-size:9px;
+    }
+
+    .logo-texto strong{
+        font-size:21px;
+    }
+
+    .logo-texto span{
+        font-size:8px;
+        max-width:155px;
+        line-height:1.1;
+    }
+
+    .menu-toggle{
+        width:46px;
+        height:46px;
+        border-radius:11px;
+        font-size:24px;
+    }
+
+    .menu.activo{
+        top:72px;
+    }
+
+    .hero-contenido{
+        width:92%;
+        padding:42px 0 50px;
+    }
+
+    .hero-etiqueta{
+        font-size:11px;
+        padding:8px 12px;
+    }
+
+    .hero h1{
+        margin-top:22px;
+        font-size:34px;
+        line-height:1.08;
+        letter-spacing:-1.2px;
+    }
+
+    .hero-descripcion{
+        margin-top:16px;
+        font-size:15px;
+        line-height:1.5;
+    }
+
+    .rastreo-card{
+        margin-top:25px;
+        padding:12px;
+        border-radius:18px;
+    }
+
+    .rastreo-input{
+        border-radius:13px;
+        padding:0 14px;
+    }
+
+    .rastreo-icono{
+        font-size:20px;
+    }
+
+    .rastreo-input input{
+        padding:14px 0;
+        font-size:15px;
+    }
+
+    .btn-rastrear{
+        margin-top:10px;
+        padding:14px;
+        font-size:16px;
+        border-radius:13px;
+    }
+
+    .rastreo-ayuda{
+        margin-top:12px;
+        font-size:12px;
+    }
+
+    .seccion{
+        padding:52px 0;
+    }
+
+    .titulo-centro{
+        margin-bottom:30px;
+    }
+
+    .titulo-centro h2{
+        margin-top:14px;
+        font-size:34px;
+        line-height:1.08;
+    }
+
+    .titulo-centro p{
+        margin-top:12px;
+        font-size:15px;
+    }
+
+    .etiqueta-seccion{
+        font-size:10px;
+        padding:7px 13px;
+    }
+
+    .nosotros-card{
+        padding:22px;
+        border-radius:18px;
+    }
+
+    .nosotros-card h3{
+        font-size:24px;
+    }
+
+    .nosotros-card p{
+        font-size:14px;
+    }
+
+    .nosotros-valores article{
+        padding:16px;
+        border-radius:15px;
+    }
+
+    .estadisticas-identidad strong{
+        font-size:30px;
+    }
+
+    .estadisticas-identidad div{
+        padding:22px 15px;
+    }
+
+    .departamento{
+        padding:9px 13px;
+        font-size:13px;
+        border-radius:12px;
+    }
+
+    .departamento-card,
+    .planificador-card,
+    .contacto-card{
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .departamento-card h3{
+        font-size:25px;
+    }
+
+    .descripcion-departamento{
+        font-size:14px;
+    }
+
+    .hub-badge{
+        font-size:12px;
+        padding:8px 12px;
+    }
+
+    .municipio{
+        font-size:13px;
+        padding:9px 11px;
+        border-radius:12px;
+    }
+
+    .datos-cobertura{
+        margin-top:25px;
+    }
+
+    .datos-cobertura div{
+        padding:17px;
+        border-radius:15px;
+    }
+
+    .datos-cobertura strong{
+        font-size:16px;
+    }
+
+    .campo{
+        margin-bottom:17px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea{
+        padding:14px;
+        border-radius:13px;
+        font-size:14px;
+    }
+
+    .resultado-planificador{
+        padding:18px;
+        border-radius:17px;
+    }
+
+    .resultado-planificador h3{
+        font-size:23px;
+    }
+
+    .resultado-planificador p{
+        font-size:14px;
+    }
+
+    .resultado-planificador strong{
+        font-size:17px;
+    }
+
+    .btn-azul,
+    .btn-enviar{
+        padding:14px;
+        font-size:15px;
+        border-radius:13px;
+    }
+
+    .servicios-grid article{
+        padding:20px;
+    }
+
+    .confianza{
+        padding:55px 0;
+    }
+
+    .confianza-texto h2{
+        font-size:34px;
+    }
+
+    .confianza-texto p,
+    .confianza-texto li{
+        font-size:15px;
+    }
+
+    .red-despacho{
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .faq-pregunta{
+        padding:15px 16px;
+        font-size:14px;
+    }
+
+    .faq-respuesta{
+        padding:0 16px 16px;
+        font-size:14px;
+    }
+
+    .contacto-datos strong{
+        font-size:16px;
+    }
+
+    .contacto-datos p{
+        font-size:14px;
+    }
+
+    .cta-final{
+        padding:50px 0;
+    }
+
+    .cta-final .contenedor{
+        padding:38px 20px;
+        border-radius:22px;
+    }
+
+    .cta-final h2{
+        font-size:31px;
+    }
+
+    .cta-final p{
+        font-size:15px;
+    }
+
+    .footer-grid{
+        padding:45px 0;
+        gap:30px;
+    }
+
+    .guia-no-encontrada{
+        margin-top:20px;
+        padding:30px 20px;
+        border-radius:20px;
+    }
+
+    .icono-error{
+        width:62px;
+        height:62px;
+        font-size:32px;
+        margin-bottom:20px;
+    }
+
+    .guia-no-encontrada h3{
+        font-size:25px;
+        line-height:1.15;
+    }
+
+    .guia-no-encontrada p{
+        font-size:15px;
+        line-height:1.5;
+    }
+
+    .btn-intentar,
+    .btn-asesor{
+        width:100%;
+        max-width:280px;
+        padding:13px 18px;
+        font-size:14px;
+    }
+}
+
+@media (max-width:380px){
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .logo-texto strong{
+        font-size:19px;
+    }
+
+    .logo-texto span{
+        font-size:7px;
+        max-width:135px;
+    }
+
+    .titulo-centro h2{
+        font-size:30px;
+    }
+}
