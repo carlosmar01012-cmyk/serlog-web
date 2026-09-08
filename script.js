@@ -6,7 +6,7 @@ const numeroGuia = document.getElementById("numeroGuia");
 const resultadoRastreo = document.getElementById("resultadoRastreo");
 
 btnRastrear.addEventListener("click", function () {
-
+    alert("BOTÓN FUNCIONA");
     const guia = numeroGuia.value.trim();
 
     if (guia === "") {
